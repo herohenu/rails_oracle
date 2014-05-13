@@ -1,0 +1,34 @@
+<h1>Medical#search</h1>
+<p>Find me in app/views/medical/search.html.erb</p>
+
+
+获取的参数是:
+<%= params %>
+<hr>
+来源:<%= params[:source] %> <br>
+<%= params[:sourceid] %><br>
+<!-- html page-->
+
+
+<hr>
+<%= @users.count %>
+<table border="1"  corlor = "#334499">
+<%  @users.each  do |u|%>
+
+    <tr>
+      <td>name: <%= u.name %> </td>
+      <td>gender: <%= u.sex %>  </td>
+      <td>birth: <%= u.birthday %> </td>
+    </tr>
+<% end %>
+
+</table>
+
+<hr color="blue">
+<% if @clinicals.count > 0  %>
+  <%= '是门诊患者 ' %>
+<% end %>
+
+<% if @@inpatient.count > 0  %>
+    <%= '是住院患者 ' %>
+<% end %>

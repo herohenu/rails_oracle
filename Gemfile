@@ -5,7 +5,9 @@ gem 'rails', '4.0.3'
 #gem 'activerecord-oracle_enhanced-adapter', '~> 1.5.3'
 gem 'ruby-oci8'
 gem 'activerecord-oracle_enhanced-adapter', :git => 'git://github.com/rsim/oracle-enhanced.git'
-
+#直接连接oracle数据库
+gem 'sequel', '~> 4.8.0'
+gem 'pg'
 # Use oracle as the database for Active Record
 
 

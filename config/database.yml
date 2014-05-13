@@ -19,8 +19,7 @@
 
 development:
   adapter: oracle_enhanced
-  host: 192.168.1.46
-  encoding: utf8
+  host: 192.168.1.75
   database: ORCL
   username: yxf
   password: yxf
@@ -39,3 +38,10 @@ development:
 #  database: orcl_production
 #  username: orcl
 #  password:
+pgsql:
+  adapter: postgresql
+  encoding: unicode
+  database: prometheus_development
+  pool: 5
+  username: postgres
+  password: 123
